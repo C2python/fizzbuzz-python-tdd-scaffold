@@ -49,8 +49,7 @@ def main():
 
     epilog = format_commands(sys.argv[0].split('/')[-1], commands_list)
     parser = argparse.ArgumentParser(description='FizzBuzz Project.',
-                                     epilog=epilog,
-                                     formatter_class=argparse.RawDescriptionHelpFormatter)
+                                     epilog=epilog)
     parser.add_argument('--seq', type=int,
                         default=None, help="Print Fizzbuzz Until Seq")
     args = parser.parse_args()
